@@ -33,6 +33,7 @@ module.exports = {
         "no-unused-vars": [0],
         "no-console": [0],
         'react/prop-types': [0],
-        'prefer-destructuring': [0]
+        'prefer-destructuring': [0],
+        'react/destructuring-assignment': [0],
     }
 };

@@ -5,6 +5,7 @@
   "dependencies": {
     "@types/lodash": "^4.14.123",
     "@types/react-router-dom": "^4.3.1",
+    "@types/redux-form": "^8.1.1",
     "axios": "^0.18.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",

@@ -33,7 +33,7 @@ class EventIndex extends Component {
               <th>ID</th>
               <th>Tile</th>
               <th>Body</th>
-             </tr>
+            </tr>
           </thead>
           <tbody>{this.renderEvents()}</tbody>
         </table>
