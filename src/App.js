@@ -51,13 +51,14 @@ class App extends Component {
 const App = () => {
   const profiles = [
     { name: "JIro", age: 10 },
-    { name: "hanako" , age: 12 },
-  ]
+    { name: "hanako", age: 12 },
+    { name: "tomoko" },
+  ];
   return (
     <div>
       {
-        profiles.map((p) => {
-          return <User name={p.name} age={p.age} />
+        profiles.map((p,index) => {
+          return <User name={p.name} age={p.age} key={index}/>
         })
       }
     </div>
@@ -66,6 +67,9 @@ const App = () => {
 
 const User = (props) => {
   return <div > Hi, i 'm {props.name}! and {props.age} yeas old!</div>
+}
+User.defaultProps = {
+  age: 1
 }
 
 export default App;
