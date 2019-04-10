@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class App extends Component {
   render() {
     const greeting = "Heeeey"
-    const dom = <h1 className="foo">{greeting}</h1>
+    const dom = <input type="text" onClick={() => {alert(1)}}/>
+    //<h1 className="foo">{greeting}</h1>
     return dom
   }
 }
