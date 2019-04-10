@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
 
-const App = () => (<Counter></Counter>)
+import {increment, decrement} from '../actions'
 
-class Counter extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     console.log(this.state);
