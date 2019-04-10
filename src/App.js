@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class App extends Component {
   render() {
-    const dom = <h1>Hiii</h1>
+    const greeting = "Heeeey"
+    const dom = <h1 className="foo">{greeting}</h1>
     return dom
   }
 }
