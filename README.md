@@ -4,6 +4,7 @@
 @types/...つかったり
 eslintとか
 yarnです
+コミットごとにいろいろやってるのでコミットをみながら復習するとよいとおもいます。
 ```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
