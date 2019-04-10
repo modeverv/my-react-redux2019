@@ -1,14 +1,15 @@
-import { INCREMENT, DECREMENT } from '../actions'
+import { DECREMENT, INCREMENT } from "../actions";
 
-const initialState = { value: 0 }
+const initialState = { value: 0 };
 
+// @ts-ignore
 export default (state = initialState, action) => {
-    switch (action.type) {
-        case INCREMENT:
-            return { value: state.value + 1 };
-        case DECREMENT:
-            return { value: state.value - 1 };            
-        default: 
-            return state
-    }
-}
+  switch (action.type) {
+    case INCREMENT:
+      return { value: state.value + 1 };
+    case DECREMENT:
+      return { value: state.value - 1 };
+    default:
+      return state;
+  }
+};

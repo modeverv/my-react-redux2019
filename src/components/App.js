@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux'
-
-import {increment, decrement} from '../actions'
-import { getPortPromise } from 'portfinder';
+// import { getPortPromise } from 'portfinder';
+import { connect } from 'react-redux';
+import { decrement, increment } from '../actions';
 
 class App extends Component {
   render() {
-    const props = this.props
+    // eslint-disable-next-line prefer-destructuring
+    const props = this.props;
     return (
       <React.Fragment>
         <div>counter: {props.value}</div>
@@ -17,14 +17,17 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({ value: state.count.value })
+// @ts-ignore
+const mapStateToProps = state => ({ value: state.count.value });
 /*
 const mapDispatchToProps = dispatch => ({
   increment: () => dispatch(increment()),
   decrement: () => dispatch(decrement()),
 })
 */
-const mapDispatchToProps = ({ increment, decrement })
+const mapDispatchToProps = { increment, decrement };
 
-export default connect(mapStateToProps,mapDispatchToProps)(App)
-
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(App);
