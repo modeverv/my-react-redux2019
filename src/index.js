@@ -1,9 +1,12 @@
+// @ts-nocheck
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import EventIndex from './components/event_index';
+import EventsNew from './components/events_new';
 import './index.css';
 import reducer from './reducers';
 import * as serviceWorker from './serviceWorker';
@@ -12,7 +15,12 @@ const store = createStore(reducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>
-    <EventIndex />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/events/new" component={EventsNew} />
+        <Route exact path="/" component={EventIndex} />
+      </Switch>
+    </BrowserRouter>
   </Provider>,
   document.getElementById('root'),
 );
