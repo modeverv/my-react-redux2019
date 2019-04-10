@@ -1,7 +1,7 @@
 import React, {
   Component
 } from 'react';
-
+/*
 class App extends Component {
   render() {
     const greeting = "Heeeey"
@@ -31,12 +31,12 @@ class App extends Component {
           }
         }
       />
-    </React.Fragment>
+      </React.Fragment>
       //<h1 className="foo">{greeting}</h1>
       return ddmr
     }
   }
-
+*/
   /*
 class App extends Component {
           render() {
@@ -48,4 +48,12 @@ class App extends Component {
       } 
     }
     */
-    export default App;
+//関数こんぽーねんと   
+const App = () => {
+  return <div>hi</div>
+}
+
+const Cat = () => {
+  return <div>nyaa</div>
+}
+export default App;
