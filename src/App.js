@@ -49,10 +49,17 @@ class App extends Component {
 */
 // 関数コンポーネント
 const App = () => {
+  const profiles = [
+    { name: "JIro", age: 10 },
+    { name: "hanako" , age: 12 },
+  ]
   return (
     <div>
-      <User name={"Taro"} age={10} />
-      <User name={"Jiro"} age={12} />
+      {
+        profiles.map((p) => {
+          return <User name={p.name} age={p.age} />
+        })
+      }
     </div>
   );
 }
