@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@types/lodash": "^4.14.123",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/redux-form": "^8.1.1",
     "axios": "^0.18.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
@@ -13,8 +15,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.1",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
+    "redux-form": "^8.1.0",
     "redux-thunk": "^2.3.0",
     "tslint": "^5.15.0",
     "typescript": "^3.4.3"

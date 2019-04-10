@@ -3,6 +3,8 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 // import { getPortPromise } from 'portfinder';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 import { readEvents } from '../actions';
 
 class EventIndex extends Component {
@@ -24,16 +26,19 @@ class EventIndex extends Component {
 
   render() {
     return (
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Tile</th>
-            <th>Body</th>
-          </tr>
-        </thead>
-        <tbody>{this.renderEvents()}</tbody>
-      </table>
+      <React.Fragment>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tile</th>
+              <th>Body</th>
+            </tr>
+          </thead>
+          <tbody>{this.renderEvents()}</tbody>
+        </table>
+        <Link to="/events/new">New Event</Link>
+      </React.Fragment>
     );
   }
 }
