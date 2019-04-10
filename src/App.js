@@ -1,6 +1,5 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
+
 /*
 class App extends Component {
   render() {
@@ -37,7 +36,7 @@ class App extends Component {
     }
   }
 */
-  /*
+/*
 class App extends Component {
           render() {
         return React.createElement(
@@ -45,15 +44,21 @@ class App extends Component {
           null,
           "Hello Wooooold"
         );
-      } 
+        }
     }
-    */
-//関数こんぽーねんと   
+*/
+// 関数コンポーネント
 const App = () => {
-  return <div>hi</div>
+  return (
+    <div>
+      <User name={"Taro"} age={10} />
+      <User name={"Jiro"} age={12} />
+    </div>
+  );
 }
 
-const Cat = () => {
-  return <div>nyaa</div>
+const User = (props) => {
+  return <div > Hi, i 'm {props.name}! and {props.age} yeas old!</div>
 }
+
 export default App;
