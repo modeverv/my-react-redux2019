@@ -11,6 +11,7 @@ module.exports = {
         "document": true,
         "SubmissionError": true,
         "google": true,
+        "console": true,
     },
     "rules": {
         "react/jsx-filename-extension": [1, {
@@ -30,5 +31,8 @@ module.exports = {
         "react/button-has-type": [0],
         "import/no-extraneous-dependencies": [0],
         "no-unused-vars": [0],
+        "no-console": [0],
+        'react/prop-types': [0],
+        'prefer-destructuring': [0]
     }
 };
