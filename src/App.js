@@ -15,15 +15,25 @@ class App extends Component {
     const ddm = <div>
       <label htmlFor="bar" > bar </label>
       <input type="text"
-          onChange={
-            () => {
-              console.log(this)
-            }
+        onChange={
+          () => {
+            console.log(this)
           }
+        }
       />
     </div>
+    const ddmr = <React.Fragment>
+      <label htmlFor="bar" > bar </label>
+      <input type="text"
+        onChange={
+          () => {
+            console.log(this)
+          }
+        }
+      />
+    </React.Fragment>
       //<h1 className="foo">{greeting}</h1>
-      return ddm
+      return ddmr
     }
   }
 
