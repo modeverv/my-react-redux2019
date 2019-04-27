@@ -5,6 +5,7 @@
 eslintとか
 yarnです
 コミットごとにいろいろやってるのでコミットをみながら復習するとよいとおもいます。
+yarn start
 ```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
